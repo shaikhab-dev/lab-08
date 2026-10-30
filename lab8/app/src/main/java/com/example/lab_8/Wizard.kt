@@ -1,5 +1,5 @@
 package com.example.lab_8
-
+// CMPUT 301 Lab 8 - CI verification
 class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     fun castSpell(spell: String): Int {
         when (spell) {
