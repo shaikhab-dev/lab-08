@@ -15,13 +15,17 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
                     return spellPower * 2
                 } else return 0 // not enough mana
             }
+
             else -> {
                 return 0 // invalid spell
             }
         }
     }
 
+
     fun restoreMana(amount: Int) {
+        mana = minOf(100, mana + amount)
     }
 
 }
+
